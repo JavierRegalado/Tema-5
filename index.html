@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_Page</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="js/main.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Calificador de Seires</h1>
+        <nav aria-label="Main Navigation">
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Actores</a>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida">
+            <h2>Bienvenido a la Landing Page</h2>
+            <p>Explora nuestras series y descubre nuevos actores.</p>
+
+            <button id="btn-accion" type="button">Haz clic aquí</button>
+            <p id="mensaje-estado" role="status" aria-live="polite"></p>
+        </section>
+        <section class="seccion-ampliada">
+            <button id="btn-toggle-info" type="button" aria-expanded="false" aria-controls="info-extra">
+                Mostrar mas informacion
+            </button>
+
+            <article id="info-extra" class="info-contenido oculto" aria-hidden="true">
+                <h3>Información ampliada sobre la herramienta</h3>
+                <p>Nuestra plataforma te permite calificar episodios individualmente, organizar listas de seguimiento personalizadas y analizar tus hábitos de consumo televisivo de forma sencilla y directa.</p>
+                <ul>
+                    <li><strong>Instalación:</strong> Funciona directamente en cualquier navegador moderno sin descargas.</li>
+                    <li><strong>Ventajas:</strong> Interfaz rápida, sin cookies invasivas y totalmente accesible.</li>
+                    <li><strong>Extensiones:</strong> Compatible con la exportación de datos a formatos estándar.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="seccion-caracteristicas">
+            <h2>Características de la Plataforma</h2>
+            
+            
+            <div class="contenedor-busqueda">
+                <label for="campo-busqueda">Buscar característica:</label>
+                <input type="search" id="campo-busqueda" placeholder="Ej. Filtro, Análisis...">
+            </div>
+
+            
+            <div id="contenedor-caracteristicas" class="grid-caracteristicas"></div>
+            
+            
+            <p id="mensaje-sin-resultados" class="mensaje-vacio oculto" role="status" aria-live="polite">
+                No se encontraron características que coincidan con tu búsqueda.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Calificador de Series. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

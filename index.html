@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing_Page</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="js/main.js" defer></script>
+
 </head>
 <body>
     <header>
         <h1>Calificador de Seires</h1>
-        <nav>
+        <nav arial-label="Main Navigation">
             <a href="#">Inicio</a>
             <a href="#">Series</a>
             <a href="#">Actores</a>
         </nav>
     </header>
     <main>
-        <h2>Bienvenido a la Landing Page</h2>
-        <p>Explora nuestras series y califica tus favoritas.</p>
+        <section class="bienvenida">
+            <h2>Bienvenido a la Landing Page</h2>
+            <p>Explora nuestras series y descubre nuevos actores.</p>
+
+            <button id="btn-accion" type="button">Haz clic aquí</button>
+            <p id="mensaje-estado" role="status" aria-live="polite"></p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Calificador de Series. Todos los derechos reservados.</p>

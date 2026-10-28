@@ -1,6 +1,7 @@
 import{
     elementos,
-    actualizarMensajeEstado
+    actualizarMensajeEstado,
+    alternarInformacion
 } from './interfaz.js';
 
 
@@ -11,3 +12,5 @@ elementos.btnAccion.addEventListener("click", () => {
 elementos.btnAccion.addEventListener("click", () => {
     console.log("Has pulsado al boton")
 })
+
+elementos.btnToggleInfo.addEventListener("click", alternarInformacion);

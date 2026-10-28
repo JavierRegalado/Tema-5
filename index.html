@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Calificador de Seires</h1>
-        <nav arial-label="Main Navigation">
+        <nav aria-label="Main Navigation">
             <a href="#">Inicio</a>
             <a href="#">Series</a>
             <a href="#">Actores</a>
@@ -24,6 +24,21 @@
 
             <button id="btn-accion" type="button">Haz clic aquí</button>
             <p id="mensaje-estado" role="status" aria-live="polite"></p>
+        </section>
+        <section class="seccion-ampliada">
+            <button id="btn-toggle-info" type="button" aria-expanded="false" aria-controls="info-extra">
+                Mostrar mas informacion
+            </button>
+
+            <article id="info-extra" class="info-contenido oculto" aria-hidden="true">
+                <h3>Información ampliada sobre la herramienta</h3>
+                <p>Nuestra plataforma te permite calificar episodios individualmente, organizar listas de seguimiento personalizadas y analizar tus hábitos de consumo televisivo de forma sencilla y directa.</p>
+                <ul>
+                    <li><strong>Instalación:</strong> Funciona directamente en cualquier navegador moderno sin descargas.</li>
+                    <li><strong>Ventajas:</strong> Interfaz rápida, sin cookies invasivas y totalmente accesible.</li>
+                    <li><strong>Extensiones:</strong> Compatible con la exportación de datos a formatos estándar.</li>
+                </ul>
+            </article>
         </section>
     </main>
     <footer>
